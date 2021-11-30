@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Next Word Prediction </title>
+  <style>
+body{
+  background-color:#F8F8FF;
+  }
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li{
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+div{
+position:
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="/about.html">About us</a></li>
+  <li><a href="#" class="desktop-link">Project Details</a></li>
+  <li><a href="/feedback.html">Feedback</a></li>
+</ul>
+<h1 align="center">Welcome to the next word prediction</h1>
+<br>
+<br>
+<div>
+<form action='/analyze' method='get'>
+    <textarea name='text' placeholder="Enter here ..." style='margin: 0px; width: 721px; height: 93px;'></textarea><br>
+
+    <input type="checkbox" name="removepunc"> Remove Punctuations<br>
+    <button type='submit'> Analyze Text</button>
+
+</form>
+    <br>
+    <h2> Result </h2>
+<p>
+    {{analyzed_text}}
+</p>
+    <p>
+
+    {{none_analyzed_text}}
+    </p>
+
+</div>
+
+</div>
+</body>
+</html>
